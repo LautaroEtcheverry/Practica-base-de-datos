@@ -1,0 +1,44 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px;
+    z-index: 1000;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    backdrop-filter: blur(10px); 
+    height: 75px; 
+    color: white;
+
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 50px;
+    align-items: center;
+    font-size: 30px;
+
+   
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 30px;
+    
+}
+.logo {
+    margin-left: 30px; 
+}
+
+
+
+
+
+
+
