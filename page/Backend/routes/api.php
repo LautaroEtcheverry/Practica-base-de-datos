@@ -1,12 +1,30 @@
 <?php
 require "../controllers/libros.php"; // Importar el controlador que maneja la lógica de negocio
+require "../controllers/usuarios.php";
 
 // Obtener el método de la solicitud HTTP (GET, POST, etc.)
 $requestMethod = $_SERVER["REQUEST_METHOD"];
 
 // Si la solicitud es de tipo GET, se llama a la función obtenerLibros()
 if ($requestMethod == "GET") {
-    obtenerLibros();
+ 
+    $seccion = $_GET["seccion"];
+    if( $seccion =="libros"){
+        obtenerLibros();
+
+
+    } else if ($seccion=="usuarios"){
+
+      obtenerUsuarios();
+
+    } else if ($seccion=="prestamos"){
+        
+        echo "Aca llamaremos al JSON de prestamos";
+
+
+    }
+    
+
 } 
 // Si la solicitud es de tipo POST, se procesa la entrada y se agrega un libro
 elseif ($requestMethod == "POST") {
