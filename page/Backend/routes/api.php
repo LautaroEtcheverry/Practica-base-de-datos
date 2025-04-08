@@ -1,6 +1,7 @@
 <?php
 require "../controllers/libros.php"; // Importar el controlador que maneja la lógica de negocio
 require "../controllers/usuarios.php";
+require "../controllers/prestamo.php";
 
 // Obtener el método de la solicitud HTTP (GET, POST, etc.)
 $requestMethod = $_SERVER["REQUEST_METHOD"];
