@@ -15,15 +15,15 @@
 <th>autor</th>
 <th>año_publicacion</th>
 <th>disponible</th>
-
-
-
-
-
-
-
-    </tr>
-
+ </tr>
 </table>
+
+<form action="../Backend/routes/api.php?seccion=libros" method="post">
+    <input type="text" name="titulo" id="titulo" required>
+    <input type="text" name="autor" id="autor" required>
+    <input type="text" name="año_publicacion" id="año_publicacion" required>
+    <input type="text" name="disponible" id="disponible" required>
+    <input type="submit" value="Guardar">
+</form>
 </body>
 </html>

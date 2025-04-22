@@ -11,7 +11,6 @@ async function obtenerLibro() {
         document.getElementById("contenedor-libros").innerHTML = "<p>Error al obtener libros</p>";
 
     }
-
 }
 
 function mostrarLibros(libros) {
@@ -24,7 +23,6 @@ function mostrarLibros(libros) {
         texto += `<td>${libro.titulo}</td>`
         texto += `<td>${libro.autor}</td>`
         texto += `<td>${libro.fecha}</td>`
-       
         texto += `<td>${libro.disponible}</td>`
         texto += `</tr>`
 
